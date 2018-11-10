@@ -33,7 +33,7 @@ public class FirebaseLogin : MonoBehaviour {
     }
     IEnumerator LoginSuccess()
     {
-        float fadeTime = GameObject.Find("Firebase").GetComponent<Fade>().BeginFade(1);
+        float fadeTime = GameObject.Find("FireBase").GetComponent<Fade>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
         SceneManager.LoadSceneAsync("MainMenu");
     }
