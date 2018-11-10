@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "263581503223",
+    "firebase_url": "https://beartravel-7f81a.firebaseio.com",
+    "project_id": "beartravel-7f81a",
+    "storage_bucket": "beartravel-7f81a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263581503223:android:72f720fc4a83147c",
+        "android_client_info": {
+          "package_name": "com.HTC.BearTravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263581503223-l0b45ekdqs27hc6b2oke2el9kkmt2f1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQxd1_XP6mQKKchqGIVCZmf5ae2PFnrXA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
