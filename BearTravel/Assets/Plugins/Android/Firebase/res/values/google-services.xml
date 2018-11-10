@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://beartravel-7f81a.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">263581503223</string>
+  <string name="google_storage_bucket" translatable="false">beartravel-7f81a.appspot.com</string>
+  <string name="project_id" translatable="false">beartravel-7f81a</string>
+  <string name="google_api_key" translatable="false">AIzaSyBQxd1_XP6mQKKchqGIVCZmf5ae2PFnrXA</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBQxd1_XP6mQKKchqGIVCZmf5ae2PFnrXA</string>
+  <string name="google_app_id" translatable="false">1:263581503223:android:72f720fc4a83147c</string>
+  <string name="default_web_client_id" translatable="false">263581503223-l0b45ekdqs27hc6b2oke2el9kkmt2f1e.apps.googleusercontent.com</string>
+</resources>
