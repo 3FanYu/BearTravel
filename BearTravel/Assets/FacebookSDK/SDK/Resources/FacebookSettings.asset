@@ -15,9 +15,9 @@ MonoBehaviour:
   clientTokens:
   - 
   appIds:
-  - 0
+  - 2162819013957191
   appLabels:
-  - App Name
+  - BearTravel
   cookie: 1
   logging: 1
   status: 1

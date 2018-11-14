@@ -8,6 +8,9 @@ public class SwitchToVR : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
+       
+    }
+    public void VRSwitch() {
         StartCoroutine(SwitchVR());
     }
    public IEnumerator SwitchVR()
