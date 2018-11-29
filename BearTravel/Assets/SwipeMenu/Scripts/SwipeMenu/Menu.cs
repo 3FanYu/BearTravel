@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 namespace SwipeMenu
@@ -34,6 +35,8 @@ namespace SwipeMenu
 		/// </summary>
 		public MenuItem[] menuItems;
 
+        public Text SceneName;
+        public string[] Name;
 
 		private float _centreOffset = 1.0f;
 		private float _currentMenuPosition = 0.0f;
@@ -81,7 +84,7 @@ namespace SwipeMenu
 			if (_swipeHandler == null) {
 				_swipeHandler = gameObject.AddComponent<SwipeHandler> ();
 			}
-
+            SceneName.text = Name[0];
 		}
 
 
@@ -99,9 +102,11 @@ namespace SwipeMenu
 			int currentIndex = GetClosestMenuItemIndex ();
 
 
-			if (currentIndex != -1) {
-				currentIndex = Mathf.Clamp (currentIndex + amount, 0, menuItems.Length - 1);
-				AnimateToTargetItem (menuItems [currentIndex]);
+            if (currentIndex != -1) {
+                currentIndex = Mathf.Clamp(currentIndex + amount, 0, menuItems.Length - 1);
+                print(currentIndex);
+                AnimateToTargetItem(menuItems[currentIndex]);
+                
 			}
 		}
 	
@@ -111,10 +116,12 @@ namespace SwipeMenu
 		/// <param name="item">Item.</param>
 		public void AnimateToTargetItem (MenuItem item)
 		{
-			float offset = CalcPosXInverse (item.transform.position.x);
+            int index = System.Array.IndexOf(menuItems, item);
+            float offset = CalcPosXInverse (item.transform.position.x);
 
 			iTween.ValueTo (gameObject, iTween.Hash ("from", _currentMenuPosition, "to", _currentMenuPosition + offset, 
 			                                         "time", 0.5, "easetype", iTween.EaseType.easeOutCubic, "onupdate", "UpdateCurrentMenuPosition"));
+            SceneName.text = Name[index];
 		}
 
 		/// <summary>
