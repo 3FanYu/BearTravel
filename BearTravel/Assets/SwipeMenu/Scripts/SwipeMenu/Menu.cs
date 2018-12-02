@@ -35,19 +35,25 @@ namespace SwipeMenu
 		/// </summary>
 		public MenuItem[] menuItems;
 
-        public Text SceneName;
+        
         public string[] Name;
-
+        Text SceneName;
 		private float _centreOffset = 1.0f;
 		private float _currentMenuPosition = 0.0f;
 		private float _maxMenuPosition;
 		private SwipeHandler _swipeHandler;
 
-		private static Menu _instance;
+        private void Start()
+        {
+            SceneName = GameObject.Find("Text_SceneName").GetComponent<Text>();
+            SceneName.text = Name[0];
+        }
+        private static Menu _instance;
 		/// <summary>
 		/// Returns an instance of Menu. Provides centralised access to class form any script.
 		/// </summary>
 		/// <value>The instance.</value>
+        
 		public static Menu instance {
 			get {
 				if (!_instance) {
@@ -84,7 +90,7 @@ namespace SwipeMenu
 			if (_swipeHandler == null) {
 				_swipeHandler = gameObject.AddComponent<SwipeHandler> ();
 			}
-            SceneName.text = Name[0];
+            
 		}
 
 

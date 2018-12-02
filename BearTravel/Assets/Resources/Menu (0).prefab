@@ -396,6 +396,10 @@ MonoBehaviour:
   - {fileID: 114111450633690244}
   - {fileID: 114446302809859256}
   - {fileID: 114371296658379180}
+  Name:
+  - "\u81FA\u4E2D\u6B4C\u5287\u9662"
+  - "\u81FA\u5317101"
+  - "\u592A\u9B6F\u95A3\u570B\u5BB6\u516C\u5712"
 --- !u!114 &114515256194777930
 MonoBehaviour:
   m_ObjectHideFlags: 1
