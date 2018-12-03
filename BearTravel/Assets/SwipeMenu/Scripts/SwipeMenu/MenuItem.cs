@@ -9,15 +9,17 @@ namespace SwipeMenu
 	/// </summary>
 	public class MenuItem : MonoBehaviour
 	{
-		/// <summary>
-		/// The behaviour to be invoked when the menu item is selected.
-		/// </summary>
-		public Button.ButtonClickedEvent OnClick;
+        /// <summary>
+        /// The behaviour to be invoked when the menu item is selected.
+        /// </summary>
+        public Button.ButtonClickedEvent OnClick;
 
 		/// <summary>
 		/// The behaviour to be invoked when another menu item is selected.
 		/// </summary>
 		public Button.ButtonClickedEvent OnOtherMenuClick;
+        
 
-	}
+
+    }
 }
