@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -344,8 +344,9 @@ GameObject:
   - component: {fileID: 329503435}
   - component: {fileID: 329503434}
   - component: {fileID: 329503474}
+  - component: {fileID: 329503475}
   m_Layer: 0
-  m_Name: "\u51F1\u65CB\u9580\u4F8B\u53E5 (1)"
+  m_Name: "\u51F1\u65CB\u9580\u4F8B\u53E5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,13 +379,13 @@ MonoBehaviour:
   itemId: 58
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
-  targetComponentAssemblyName: SceneFader, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+  targetObject: {fileID: 364608175}
+  targetComponentAssemblyName: ChangeScene, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: SceneFader
-  targetMethod: NextScene
-  targetMethodText: 'NextScene (String): Void'
+  targetComponentText: ChangeScene
+  targetMethod: changeToScene
+  targetMethodText: 'changeToScene (String): Void'
   methodParameters:
   - objValue:
       typeAssemblyname: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
@@ -393,7 +394,7 @@ MonoBehaviour:
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: ChooseMode
+      stringValue: Score
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
@@ -432,6 +433,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 329503475}
   - {fileID: 329503434}
 --- !u!114 &329503436
 MonoBehaviour:
@@ -471,7 +473,7 @@ MonoBehaviour:
   itemId: 54
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1766714888}
   targetComponentAssemblyName: MoveCam, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -490,7 +492,7 @@ MonoBehaviour:
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
+      objectValue: {fileID: 1382368776}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -568,7 +570,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 820.98804
     y: 504.6761
-    width: 211.42851
+    width: 225.94933
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -645,7 +647,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 574.1539
     y: 504.77557
-    width: 198.57137
+    width: 198.10123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -748,7 +750,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 746.7589
     y: 435.399
-    width: 261.42847
+    width: 279.11386
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -825,7 +827,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 555.7589
     y: 437.5729
-    width: 164.28568
+    width: 163.92401
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -927,7 +929,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 456.7589
     y: 369.5729
-    width: 312.85703
+    width: 334.81006
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1003,7 +1005,7 @@ MonoBehaviour:
   itemId: 34
   indentLevel: 0
   description: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1766714888}
   targetComponentAssemblyName: MoveCam, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
@@ -1022,7 +1024,7 @@ MonoBehaviour:
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
-      objectValue: {fileID: 0}
+      objectValue: {fileID: 1081506605}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
@@ -1048,7 +1050,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 417.60358
     y: 303.17432
-    width: 187.1428
+    width: 186.70883
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1151,7 +1153,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 360.734
     y: 238.57185
-    width: 175.71423
+    width: 186.70883
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1228,7 +1230,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 298.734
     y: 155.00043
-    width: 164.28568
+    width: 163.92401
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1330,7 +1332,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 273.734
     y: 69.00043
-    width: 214.28564
+    width: 231.01262
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1407,7 +1409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 115.73399
     y: 68.00043
-    width: 144.28568
+    width: 155.06326
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1431,11 +1433,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 62.623245, y: -2.986576}
+  scrollPos: {x: -228.33844, y: -429.05615}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 200
-  zoom: 0.7000003
+  zoom: 0.7900002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1443,9 +1445,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 329503458}
+  - {fileID: 329503435}
   selectedCommands:
-  - {fileID: 329503457}
+  - {fileID: 329503434}
   variables: []
   description: 
   stepPause: 0
@@ -1469,11 +1471,104 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 329503472}
-  waitForFrames: 1
+  waitForFrames: 120
+--- !u!114 &329503475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329503432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 59
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 364608175}
+  targetComponentAssemblyName: TimeRecorder, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: TimeRecorder
+  targetMethod: StopRecording
+  targetMethodText: 'StopRecording (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!4 &351105578 stripped
 Transform:
   m_PrefabParentObject: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
   m_PrefabInternal: {fileID: 1848718618}
+--- !u!1 &364608175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 364608178}
+  - component: {fileID: 364608177}
+  - component: {fileID: 364608176}
+  - component: {fileID: 364608179}
+  m_Layer: 0
+  m_Name: SceneChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &364608176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364608175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d377c2c3411f80b46ba08bdbf77da75d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &364608177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364608175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6be35b7a8bef54542aa0ca9695488722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: a764851b6fd0c1641b358744abebc2d2, type: 3}
+  fadeSpeed: 0.8
+--- !u!4 &364608178
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364608175}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.4967437, y: -0.56260026, z: 2.6697736}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &364608179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364608175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 064e47bf5745c044c95a81424dd3d3b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &489441153
 Prefab:
   m_ObjectHideFlags: 0
@@ -2011,7 +2106,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1820761120, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.452
       objectReference: {fileID: 0}
     - target: {fileID: 1820761120, guid: 34c21f523e72f45509a4e37ed0293c3b, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3105,16 +3200,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1766714888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7464746202577c344863c9123536f3ee, type: 3}
+  m_Script: {fileID: 11500000, guid: ea27c9a221a284d40a63c0c66acf334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  talkFlowchart: {fileID: 0}
-  onCollosionEnter: Ending
   Player: {fileID: 1995552761}
-  Maps:
-  - {fileID: 2137431722}
-  - {fileID: 1081506601}
-  - {fileID: 1382368772}
 --- !u!4 &1795305339 stripped
 Transform:
   m_PrefabParentObject: {fileID: 766346198, guid: 463285ecd6702471a909ba810832bf0e,
@@ -3133,6 +3222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1848390157}
   - component: {fileID: 1848390158}
+  - component: {fileID: 1848390159}
   m_Layer: 0
   m_Name: Systems
   m_TagString: Untagged
@@ -3170,11 +3260,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkFlowchart: {fileID: 1226858522}
   onCollosionEnter: Ending
-  Player: {fileID: 1867312939}
   Maps:
   - {fileID: 1175684741}
   - {fileID: 1320033740}
   - {fileID: 2036956233}
+--- !u!114 &1848390159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1848390156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea27c9a221a284d40a63c0c66acf334c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 1867312939}
 --- !u!1001 &1848718618
 Prefab:
   m_ObjectHideFlags: 0
@@ -3264,7 +3365,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.32
+      value: 0.605
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3288,11 +3389,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 0.000000026822
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -0.152
+      value: -0.298
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_SizeDelta.x
@@ -3332,15 +3433,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.0003363518
+      value: 0.0005381628
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.0003363519
+      value: 0.0005381629
       objectReference: {fileID: 0}
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.0003363519
+      value: 0.0005381629
       objectReference: {fileID: 0}
     - target: {fileID: 11486804, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_Enabled
@@ -3369,6 +3470,10 @@ Prefab:
     - target: {fileID: 11488896, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
       propertyPath: m_FontData.m_MaxSize
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 22388894, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 2}

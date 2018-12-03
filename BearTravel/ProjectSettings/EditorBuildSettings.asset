@@ -26,3 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChooseScene.unity
     guid: ef5dc6a8a9c6234418ee96212ff10b27
+  - enabled: 1
+    path: "Assets/Scenes/\u5834\u666F/\u672C\u571F\u666F\u9EDE/\u53F0\u4E2D\u6B4C\u5287\u9662.unity"
+    guid: e8f946efdcd9a5048a2537977a70c81e
+  - enabled: 1
+    path: Assets/Scenes/Score.unity
+    guid: c35a001f9d4d74b4e846463e76870fa5
