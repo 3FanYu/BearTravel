@@ -46,6 +46,7 @@ namespace SwipeMenu
         private void Start()
         {
             SceneName = GameObject.Find("Text_SceneName").GetComponent<Text>();
+            GameObject.Find("SceneChanger").SetActive(true);
             SceneName.text = Name[0];
         }
         private static Menu _instance;

@@ -16,6 +16,7 @@ namespace SwipeMenu
 
         void Start()
         {
+            GameObject.Find("SceneChanger").SetActive(true);
             _startedTouch = false;
             _startingPosition = GvrControllerInput.TouchPosCentered;
             _currentPosition = GvrControllerInput.TouchPosCentered;

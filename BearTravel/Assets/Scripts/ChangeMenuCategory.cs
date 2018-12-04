@@ -8,6 +8,7 @@ public class ChangeMenuCategory : MonoBehaviour {
     public Text category;
     int i;
     GameObject Des;
+    GameObject SceneChanger;
      GameObject[] menu = new GameObject[4];
     string[] CategoryName = new string[] { "本土景點", "歷史古蹟", "現代建築", "神秘禁區" };
     // Use this for initialization
@@ -31,7 +32,9 @@ public class ChangeMenuCategory : MonoBehaviour {
             Destroy(Des);
              menu[i] = (GameObject)Instantiate(Resources.Load("Menu ("+i+")"));
             menu[i].name = "Menu (" + i + ")";
-            print("Menu (" + i + ")");
+           // SceneChanger= (GameObject)Instantiate(Resources.Load("SceneChanger"));
+            //SceneChanger.name = "SceneChanger";
+           // print("Menu (" + i + ")");
             menu[i].SetActive(true);
             category.text = CategoryName[i];
             print("Right");
