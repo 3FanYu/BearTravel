@@ -2515,7 +2515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 20
-  HPgram: {fileID: 413541486}
+  HPgram: {fileID: 901557190}
   OGsaydialog: {fileID: 2022056936}
   OGmenudialog: {fileID: 1932577416}
   talkFlowchart: {fileID: 1947489096}
@@ -6295,7 +6295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   one: {fileID: 2022056936}
   two: {fileID: 1932577416}
-  three: {fileID: 413541486}
+  three: {fileID: 901557190}
   four: {fileID: 1897356691}
   five: {fileID: 1235460671}
 --- !u!114 &1766714892
@@ -6732,7 +6732,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1897356702
 MonoBehaviour:
