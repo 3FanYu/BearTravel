@@ -37,9 +37,10 @@ public class HP : MonoBehaviour {
 
                 if (QuestionTimes <= 2)
                 {
-                    
-                    if (QuestionTimes==1) {
-                        GameObject.Find("Systems").GetComponent<Attention>().activation=true;
+
+                    if (QuestionTimes == 1)
+                    {
+                        GameObject.Find("Systems").GetComponent<Attention>().activation = true;
                     }
                     else if (QuestionTimes == 2)
                     {
@@ -49,13 +50,9 @@ public class HP : MonoBehaviour {
                         talkFlowchart.ExecuteBlock(targetBlock);
                         QuestionTimes = 0;
                         HPgram.SetActive(false);
-
-
                     }
                     QuestionTimes += 1;
-                }
-                
-                                
+                }                          
                 timeLeft = time;
             }
             this.transform.localPosition = new Vector3((-478 + 478 * (Hp / MaxHp)), 0.0f, 0.0f);

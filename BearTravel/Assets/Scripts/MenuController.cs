@@ -90,8 +90,8 @@ namespace SwipeMenu
             }
         }
         public void MenuSelected(MenuItem item) {
-            if (Menu.instance.MenuCentred(item)) {
-                Menu.instance.ActivateSelectedMenuItem(item);
+            if (!Menu.instance.MenuCentred(item)) {
+                GameObject.Find("SceneChanger").GetComponent<ChangeScene>().changeToScene("台中歌劇院");
             }
         }
     }
