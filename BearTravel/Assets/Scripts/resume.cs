@@ -25,4 +25,8 @@ public class resume : MonoBehaviour {
         four.SetActive(false);
         five.SetActive(false);
     }
+    public void restartC() {
+        GameObject.Find("Systems").GetComponent<CountDown>().timeLeft = 20f;
+        GameObject.Find("Systems").GetComponent<CountDown>().activate = true;
+    }
 }

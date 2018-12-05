@@ -43,6 +43,5 @@ public class Attention : MonoBehaviour {
                 HP.SetActive(true);
             }
 		}
-
 	}
 }
