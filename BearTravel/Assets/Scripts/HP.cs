@@ -44,8 +44,8 @@ public class HP : MonoBehaviour {
                     }
                     else if (QuestionTimes == 2)
                     {
-                        OGmenudialog.SetActive(false);
-                        OGsaydialog.SetActive(false);
+                        OGmenudialog.GetComponent<Canvas>().enabled=false;
+                        OGsaydialog.GetComponent<Canvas>().enabled = false;
                         Block targetBlock = talkFlowchart.FindBlock("Q2");
                         talkFlowchart.ExecuteBlock(targetBlock);
                         QuestionTimes = 0;

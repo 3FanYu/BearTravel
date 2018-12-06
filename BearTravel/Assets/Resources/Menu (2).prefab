@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 65792507202734090}
   - component: {fileID: 23175588160423982}
   - component: {fileID: 114467404655510752}
+  - component: {fileID: 114020508247414158}
+  - component: {fileID: 114061491149264454}
   m_Layer: 0
   m_Name: Default Menu Item
   m_TagString: MenuItem
@@ -41,6 +43,8 @@ GameObject:
   - component: {fileID: 114324660196653860}
   - component: {fileID: 114695068059318336}
   - component: {fileID: 114327202166617228}
+  - component: {fileID: 114442850881788922}
+  - component: {fileID: 114992907152931540}
   m_Layer: 0
   m_Name: Menu (2)
   m_TagString: Untagged
@@ -61,6 +65,7 @@ GameObject:
   - component: {fileID: 23725316071962454}
   - component: {fileID: 114525966508793698}
   - component: {fileID: 114659474457205916}
+  - component: {fileID: 114246430881743210}
   m_Layer: 0
   m_Name: Cover (1)
   m_TagString: MenuItem
@@ -80,6 +85,8 @@ GameObject:
   - component: {fileID: 65056243212343186}
   - component: {fileID: 23238212709508382}
   - component: {fileID: 114522524411053166}
+  - component: {fileID: 114175334868358600}
+  - component: {fileID: 114745911042970286}
   m_Layer: 0
   m_Name: Cover (2)
   m_TagString: MenuItem
@@ -301,6 +308,96 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114020508247414158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349604138553018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114992907152931540}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 114467404655510752}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &114061491149264454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1349604138553018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
+--- !u!114 &114175334868358600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651568127762370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
+--- !u!114 &114246430881743210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1573962781030560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114992907152931540}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 114525966508793698}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &114324660196653860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,6 +434,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handleTouches: 1
   requireMenuItemToBeCentredForSelectiion: 1
+--- !u!114 &114442850881788922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1514443727931118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &114467404655510752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -432,3 +544,45 @@ MonoBehaviour:
   flickType: 0
   lockToClosest: 1
   maxForce: 15
+--- !u!114 &114745911042970286
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651568127762370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114992907152931540}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 114522524411053166}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &114992907152931540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1514443727931118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43590f7863db1be41bd28f10526af5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwipeThreshold: 0.5

@@ -91,7 +91,7 @@ namespace SwipeMenu
         }
         public void MenuSelected(MenuItem item) {
             Text SceneName;
-            if (!Menu.instance.MenuCentred(item)) {
+            if (Menu.instance.MenuCentred(item)) {
                 SceneName = GameObject.Find("Text_SceneName").GetComponent<Text>();
                 GameObject.Find("SceneChanger").GetComponent<ChangeScene>().changeToScene(SceneName.text);
             }

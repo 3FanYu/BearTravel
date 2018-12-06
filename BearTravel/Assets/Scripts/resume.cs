@@ -19,8 +19,8 @@ public class resume : MonoBehaviour {
 	}
     public void restart() {
         SoundManagerScript.PlaySound("applaud");
-        one.SetActive(true);
-        two.SetActive(true);
+        one.GetComponent<Canvas>().enabled = true;
+        two.GetComponent<Canvas>().enabled = true;
         three.SetActive(true);
         four.SetActive(false);
         five.SetActive(false);

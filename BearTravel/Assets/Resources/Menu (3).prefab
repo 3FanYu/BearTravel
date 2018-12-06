@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 65112195365091422}
   - component: {fileID: 23317230666276590}
   - component: {fileID: 114512996722873996}
+  - component: {fileID: 114437283227111700}
+  - component: {fileID: 114632827068437320}
   m_Layer: 0
   m_Name: Default Menu Item
   m_TagString: MenuItem
@@ -41,6 +43,7 @@ GameObject:
   - component: {fileID: 114950388958040530}
   - component: {fileID: 114861292398666400}
   - component: {fileID: 114307788389155250}
+  - component: {fileID: 114244074316187240}
   m_Layer: 0
   m_Name: Menu (3)
   m_TagString: Untagged
@@ -60,6 +63,8 @@ GameObject:
   - component: {fileID: 65496505725474736}
   - component: {fileID: 23989231165027318}
   - component: {fileID: 114241438021512664}
+  - component: {fileID: 114095548102059808}
+  - component: {fileID: 114266983926140208}
   m_Layer: 0
   m_Name: Cover (2)
   m_TagString: MenuItem
@@ -80,6 +85,7 @@ GameObject:
   - component: {fileID: 23785339900153356}
   - component: {fileID: 114783016326070010}
   - component: {fileID: 114846844420374312}
+  - component: {fileID: 114691267629867602}
   m_Layer: 0
   m_Name: Cover (1)
   m_TagString: MenuItem
@@ -301,6 +307,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114095548102059808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355323824603494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114244074316187240}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 114241438021512664}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &114241438021512664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,6 +358,33 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114244074316187240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1261900390100422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43590f7863db1be41bd28f10526af5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwipeThreshold: 0.5
+--- !u!114 &114266983926140208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355323824603494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &114307788389155250
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,6 +398,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handleTouches: 1
   requireMenuItemToBeCentredForSelectiion: 1
+--- !u!114 &114437283227111700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104996761069822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycasterEventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &114512996722873996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -356,6 +434,66 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114632827068437320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1104996761069822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114244074316187240}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 114512996722873996}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
+--- !u!114 &114691267629867602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415541540267230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114244074316187240}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 114783016326070010}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &114783016326070010
 MonoBehaviour:
   m_ObjectHideFlags: 1

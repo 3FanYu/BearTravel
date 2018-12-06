@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -657,6 +657,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &632812974 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114208150670548584, guid: f4bed210728922648b023e180630bf44,
+    type: 2}
+  m_PrefabInternal: {fileID: 733161686}
+  m_Script: {fileID: 11500000, guid: 3160ba9731a344d29af7fcc2db11ebb5, type: 3}
 --- !u!1001 &696331369
 Prefab:
   m_ObjectHideFlags: 0
@@ -706,6 +712,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 224318856838234480, guid: f4bed210728922648b023e180630bf44,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -795,6 +816,122 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 223429311856717556, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114799213976695836, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].eventID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2032627667}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MenuSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1589448174}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SwipeMenu.MenuItem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[1].callback.m_TypeName
+      value: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI, Version=1.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2032627667}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MenuSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1589448174}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SwipeMenu.MenuItem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114349583258644710, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092359737513926, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092359737513926, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: handleTouches
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501293531623726, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2032627667}
+    - target: {fileID: 114501293531623726, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MenuSelected
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501293531623726, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501293531623726, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 632812974}
+    - target: {fileID: 114501293531623726, guid: f4bed210728922648b023e180630bf44,
+        type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SwipeMenu.MenuItem, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4bed210728922648b023e180630bf44, type: 2}
@@ -888,6 +1025,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -12.887001, y: -121.717, z: -19.843}
+--- !u!1 &909410418 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1906064281676120, guid: f4bed210728922648b023e180630bf44,
+    type: 2}
+  m_PrefabInternal: {fileID: 733161686}
+--- !u!114 &909410419 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114036304138551110, guid: f4bed210728922648b023e180630bf44,
+    type: 2}
+  m_PrefabInternal: {fileID: 733161686}
+  m_Script: {fileID: 11500000, guid: 3160ba9731a344d29af7fcc2db11ebb5, type: 3}
+--- !u!114 &909410425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909410418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2032627667}
+          m_MethodName: MenuSelected
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 909410419}
+            m_ObjectArgumentAssemblyTypeName: SwipeMenu.MenuItem, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &914734206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1363,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1589448174 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114723418760928440, guid: f4bed210728922648b023e180630bf44,
+    type: 2}
+  m_PrefabInternal: {fileID: 733161686}
+  m_Script: {fileID: 11500000, guid: 3160ba9731a344d29af7fcc2db11ebb5, type: 3}
 --- !u!1001 &1593138207
 Prefab:
   m_ObjectHideFlags: 0
@@ -1442,3 +1626,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ca80f4596fa44b87912a0592346d260, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2032627667 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114886549178649982, guid: f4bed210728922648b023e180630bf44,
+    type: 2}
+  m_PrefabInternal: {fileID: 733161686}
+  m_Script: {fileID: 11500000, guid: 43590f7863db1be41bd28f10526af5ae, type: 3}
