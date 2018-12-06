@@ -40,10 +40,12 @@ public class HP : MonoBehaviour {
 
                     if (QuestionTimes == 1)
                     {
+                        SoundManagerScript.PlaySound("exclamatory");
                         GameObject.Find("Systems").GetComponent<Attention>().activation = true;
                     }
                     else if (QuestionTimes == 2)
                     {
+                        SoundManagerScript.PlaySound("exclamatory");
                         OGmenudialog.GetComponent<Canvas>().enabled=false;
                         OGsaydialog.GetComponent<Canvas>().enabled = false;
                         Block targetBlock = talkFlowchart.FindBlock("Q2");
